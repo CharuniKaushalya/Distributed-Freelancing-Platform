@@ -12,10 +12,10 @@ from flask import Flask,jsonify,request
 from flask_cors import CORS, cross_origin
 
 rpcuser = 'multichainrpc'
-rpcpasswd = '7LKra1Cso4TnWzQKhQbMYPmJRu9S2TiD6JuN9DYNzB1L'
+rpcpasswd = '9XhG45QnuhNByGvEak2UZY5WFLe7UQuBr42B6WunNUVc'
 rpchost = '127.0.0.1'
-rpcport = '8366'
-chainname = 'chain'
+rpcport = '6808'
+chainname = 'blockchain'
 
 api = Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)
 
@@ -318,6 +318,8 @@ def publish():
     stream = request.args.get('stream')
     key = request.args.get('key')
     data_hex = request.args.get('data_hex')
+    print(stream)
+    print("stream")
     return jsonify(api.publish(stream,key,data_hex))
 
 @app.route('/publishfrom', methods=['GET'])

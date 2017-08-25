@@ -1,0 +1,9 @@
+# Streams
+
+multichain-cli blockchain create stream Users false
+multichain-cli blockchain create stream projects false
+multichain-cli blockchain create stream contracts false
+
+# Grant
+
+multichain-cli chain1 grant 113hYJvSXrxhEjN7pa3KxaHrxzeM73BravMHh8 connect create send

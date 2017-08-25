@@ -1,1 +1,1 @@
-DEstributed Freelancing Platform
+Distributed Freelancing Platform
